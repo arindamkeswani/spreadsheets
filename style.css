@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.page-action-cont
+{
+    height: 3rem;
+    background-color: #218c74;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+    font-family: sans-serif;
+}
+.page-action{
+    /* margin: 1rem; */
+    width: 4rem;
+    height: 2rem;
+    text-align:center;
+    color: #ecf0f1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-action:hover{
+    background-color: #ecf0f1;
+    color: #218c74;   
+}
+.selected-page-action{
+    background-color: #ecf0f1;
+    color: #218c74;     
+}
+
+.cellprop-action-cont{
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+
+}
+.cellprop-action-cont > *{
+    display: inline-block;
+    margin-right: 1rem;
+
+}
+.cellprop-action-cont > *:hover{
+    cursor: pointer;
+}
+.font-family-prop{
+    padding: 0.3rem;
+}
+.font-size-prop{
+    padding: 0.3rem;
+}
+.cellprop-action-cont > select {
+    outline: none;
+    border-radius: 3px;
+}
+
+.address-action-cont{
+    height: 2rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.address-action-cont >*{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.formula-icon{
+    width: 1.6rem;
+
+}
+.address-action-cont > input{
+    outline: none;
+    border: none;
+    height: 70%;
+}
+.formula-bar{
+    width: calc(100vw - 5rem - 1rem - 1rem - 1rem);
+}
+.address-bar
+{
+    width: 5rem;
+}
+
+.grid-cont{
+    height: calc(100vh - 3rem - 3rem - 3rem - 2rem);
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+.dummy-box{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(117, 117, 117);
+    position: fixed;
+    z-index: 1;
+}
+
+.address-col-cont{
+    top: 2rem;
+    left: 0;
+    position: sticky;
+   
+}
+.cells-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    
+}
+.address-col{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    border: 1px solid #dfe4ea;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-row-cont{
+    position: sticky;
+    left: 2rem;
+    top: 0;
+    display: flex;
+    
+}
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    border: 1px solid #dfe4ea;
+    justify-content: center;
+    align-items: center;
+
+}
+.row-address{
+    display: flex;
+}
+.cells{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    outline: none;
+
+}
+.sheet-action-cont
+{
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    gap: 1rem;
+    
+}
+.sheet-action-cont >*{
+    display: inline-block;
+}
+.sheet-add-icon{
+    width: 2rem;
+}
+.sheet-add-icon:hover{
+    cursor: default;
+}
+.sheet-folder-cont{
+    height: 70%;
+    width: calc(100vw - 2rem);
+    
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+.sheet-folder{
+    height: 80%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness : 2px ;
+    /* background-color: lightgray; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-content{
+    width: 5rem;
+    /* background-color: lightgreen; */
+}
+
+.color-prop{
+    position: relative;
+}
+ .color-prop > input{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+ }
